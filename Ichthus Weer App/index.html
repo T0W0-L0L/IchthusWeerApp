@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title id="title">Weather app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/unknownwhite.svg" id="favicon"/>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="grid-container">
+    <div class="currentblock">
+      <div class="logo"><a href=""><img src="./img/logo.svg" alt="logo" href="#"></a></div>
+      <div class="currenttemperature"><span">-</span></div>
+      <div class="currentdate"><span>-</span></div>
+      <div class="currenttime"><span>-</span></div>
+      <div class="currentline"></div>
+      <div class="currentweathericon">
+        <img src="./img/unknownwhite.svg" alt="weather-icon">
+      </div>
+    </div>
+    <div class="forecastblock">
+      <div class="forecast_title">Deze Week:</div>
+      <div class="forecastday0">
+        <div class="forecastday0_date">-</div>
+        <div class="forecastday0_temperature">-</div>
+        <div class="forecastday0_precipitation">-</div>
+        <div class="forecastday0_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday0_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday1">
+        <div class="forecastday1_date">-</div>
+        <div class="forecastday1_temperature">-</div>
+        <div class="forecastday1_precipitation">-</div>
+        <div class="forecastday1_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday1_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday2">
+        <div class="forecastday2_date">-</div>
+        <div class="forecastday2_temperature">-</div>
+        <div class="forecastday2_precipitation">-</div>
+        <div class="forecastday2_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday2_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday3">
+        <div class="forecastday3_date">-</div>
+        <div class="forecastday3_temperature">-</div>
+        <div class="forecastday3_precipitation">-</div>
+        <div class="forecastday3_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday3_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday4">
+        <div class="forecastday4_date">-</div>
+        <div class="forecastday4_temperature">-</div>
+        <div class="forecastday4_precipitation">-</div>
+        <div class="forecastday4_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday4_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday5">
+        <div class="forecastday5_date">-</div>
+        <div class="forecastday5_temperature">-</div>
+        <div class="forecastday5_precipitation">-</div>
+        <div class="forecastday5_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday5_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday6">
+        <div class="forecastday6_date">-</div>
+        <div class="forecastday6_temperature">-</div>
+        <div class="forecastday6_precipitation">-</div>
+        <div class="forecastday6_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday6_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+      <div class="forecastday7">
+        <div class="forecastday7_date">-</div>
+        <div class="forecastday7_temperature">-</div>
+        <div class="forecastday7_precipitation">-</div>
+        <div class="forecastday7_winddirectionicon">
+          <img src="./img/winddirectionicon0.svg" alt="winddirection">
+        </div>
+        <div class="forecastday7_weathericon">
+          <img class="forecastday7_weathericonimg" src="./img/unknown.svg" alt="weather-icon">
+        </div>
+      </div>
+    </div>
+    <div class="mapblock">
+      <div class="map_title">Route:</div>
+      <div class="windroute"></div>
+      <iframe id="mapsrc" src="" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="chartblock">
+      <canvas id="precipitationchart" height="80%" width="600"></canvas>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <footer>
+    <div class="anyideas"><h2>Heb je nog leuke ideeën?</h2></div>
+    <div class="top-footer">
+      <a class="sendamail">Stuur ons dan een mailtje!</a>  
+      <a class="credit1" href="https://developers.google.com/maps/documentation?hl=nl"" target="_blank">Google Maps</a>
+      <a class="credit2" href="https://openweathermap.org/"" target="_blank">Openwheatermap</a>
+    </div>
+    <div class="bottom-footer">
+      <a class="sendmail" href="https://mail.google.com/mail/u/1/?view=cm&source=mailto&to=ichthusweerapp@gmail.com" target="_blank">IchtusWeerApp@gmail.com</a>
+      <a class="privacy">IchthusWeerApp verzamelt geen data van de gebruikers.</a>
+    </div>
+  </footer>
+  <div class="notificationblock">
+    <button class="closeButton">x</button>
+    <div class="inner-notificationblock"></div>
+  </div>
+  <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMiVuSa-3qaXFJbF9Qzpcff-wFb94FkbY&callback=initMap"></script> -->
+  <script src="./js/chart.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
